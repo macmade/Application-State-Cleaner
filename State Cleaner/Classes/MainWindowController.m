@@ -73,9 +73,33 @@
 
 - ( IBAction )selectAll: ( id )sender
 {
-    NSButton * btn;
+    NSButton    * btn;
+    NSNumber    * num;
+    Application * app;
     
     btn = ( NSButton * )sender;
+    
+    if( selectAll == NO )
+    {
+        selectAll = YES;
+        num       = [ NSNumber numberWithBool: YES ];
+        
+        [ btn setTitle: NSLocalizedString( @"DeselectAllApps", nil ) ];
+    }
+    else
+    {
+        selectAll = NO;
+        num       = [ NSNumber numberWithBool: NO ];
+        
+        [ btn setTitle: NSLocalizedString( @"SelectAllApps", nil ) ];
+    }
+    
+    for( app in apps )
+    {
+        [ states setObject: num forKey: app.bundleID ];
+    }
+    
+    [ table reloadData ];
 }
 
 - ( IBAction )removeSelected: ( id )sender
@@ -125,6 +149,8 @@
     app = [ apps objectAtIndex: row ];
     
     [ states setObject: value forKey: app.bundleID ];
+    
+    NSLog( @"%@", value );
 }
 
 #pragma mark - NSTableViewDelegate

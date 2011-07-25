@@ -9,6 +9,7 @@
 {
 @protected
     
+    BOOL                  selectAll;
     NSFileManager       * fm;
     NSTableView         * table;
     NSMutableDictionary * states;
