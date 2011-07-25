@@ -6,17 +6,116 @@
 /* $Id$ */
 
 #import "MainWindowController.h"
+#import "Application.h"
 
 @implementation MainWindowController
 
 @synthesize table;
 
+#pragma mark - NSWindowController
+
 - ( id )init
 {
+    Application * app;
+    NSArray     * dirs;
+    NSString    * dir;
+    
     if( ( self = [ super initWithWindowNibName: @"MainWindow" ] ) )
-    {}
+    {
+        fm     = [ NSFileManager defaultManager ];
+        states = [ [ NSMutableDictionary alloc ] initWithCapacity: 100 ];
+        apps   = [ [ NSMutableArray alloc ] initWithCapacity: 100 ];
+        path   = [ NSString stringWithFormat: @"%@/Library/Saved Application State/", NSHomeDirectory() ];
+        dirs   = [ [ fm contentsOfDirectoryAtPath: path error: NULL ] retain ];
+        
+        for( dir in dirs )
+        {
+            app = [ Application applicationWithBundleID: [ dir stringByReplacingOccurrencesOfString: @".savedState" withString: @"" ] ];
+            
+            if( app != nil )
+            {
+                [ apps addObject: app ];
+            }
+        }
+    }
     
     return self;
+}
+
+- ( void )dealloc
+{
+    [ states release ];
+    [ apps   release ];
+    
+    [ super dealloc ];
+}
+
+- ( void )awakeFromNib
+{
+    table.dataSource = self;
+    table.delegate   = self;
+}
+
+#pragma mark - NSTableViewDataSource
+
+- ( NSInteger )numberOfRowsInTableView: ( NSTableView * )tableView
+{
+    ( void )tableView;
+    
+    return [ apps count ];
+}
+
+- ( id )tableView: ( NSTableView * )tableView objectValueForTableColumn: ( NSTableColumn * )tableColumn row: ( NSInteger )row
+{
+    Application * app;
+    
+    app = [ apps objectAtIndex: row ];
+    
+    ( void )tableView;
+    ( void )tableColumn;
+    
+    if( [ [ tableColumn identifier ] isEqualToString: @"image" ] )
+    {
+        return app.icon;
+    }
+    else if( [ [ tableColumn identifier ] isEqualToString: @"bundle" ] )
+    {
+        return app.bundleID;
+    }
+    
+    return [ states objectForKey: app.bundleID ];
+}
+
+- ( void )tableView: ( NSTableView * )tableView setObjectValue: ( id )value forTableColumn: ( NSTableColumn * )tableColumn row: ( NSInteger )row
+{
+    Application * app;
+    
+    ( void )tableView;
+    ( void )value;
+    ( void )tableColumn;
+    ( void )row;
+    
+    app = [ apps objectAtIndex: row ];
+    
+    [ states setObject: value forKey: app.bundleID ];
+}
+
+#pragma mark - NSTableViewDelegate
+
+- ( void )tableView: ( NSTableView * )tableView willDisplayCell: ( id )cell forTableColumn: ( NSTableColumn * )tableColumn row: ( NSInteger )row
+{
+    Application  * app;
+    NSButtonCell * buttonCell;
+    
+    ( void )tableView;
+    
+    if( [ [ tableColumn identifier ] isEqualToString: @"appname" ] )
+    {
+        buttonCell = ( NSButtonCell * )cell;
+        app        = [ apps objectAtIndex: row ];
+        
+        [ buttonCell setTitle: app.name ];
+    }
 }
 
 @end

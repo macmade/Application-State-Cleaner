@@ -5,11 +5,15 @@
 
 /* $Id$ */
 
-@interface MainWindowController: NSWindowController
+@interface MainWindowController: NSWindowController < NSTableViewDataSource, NSTableViewDelegate >
 {
 @protected
     
-    NSTableView * table;
+    NSFileManager       * fm;
+    NSTableView         * table;
+    NSMutableDictionary * states;
+    NSMutableArray      * apps;
+    NSString            * path;
     
 @private
     
