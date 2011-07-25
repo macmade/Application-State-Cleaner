@@ -16,18 +16,20 @@
 		0576218D13DD989300C0BD94 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0576218B13DD989300C0BD94 /* MainWindowController.m */; };
 		0576219713DDB31300C0BD94 /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = 0576219613DDB31300C0BD94 /* Application.m */; };
 		0576219B13DDBE8400C0BD94 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0576219913DDBE8400C0BD94 /* Localizable.strings */; };
+		0576219D13DDC70800C0BD94 /* BlueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0576219C13DDC70800C0BD94 /* BlueView.m */; };
+		057621A613DDC94900C0BD94 /* GrayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 057621A513DDC94900C0BD94 /* GrayView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0576215913DD958A00C0BD94 /* State Cleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "State Cleaner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0576215913DD958A00C0BD94 /* Application State Cleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Application State Cleaner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0576215D13DD958A00C0BD94 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0576216013DD958A00C0BD94 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		0576216113DD958A00C0BD94 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0576216213DD958A00C0BD94 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		0576216513DD958A00C0BD94 /* State Cleaner-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "State Cleaner-Info.plist"; sourceTree = "<group>"; };
+		0576216513DD958A00C0BD94 /* Application State Cleaner-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Application State Cleaner-Info.plist"; sourceTree = "<group>"; };
 		0576216713DD958A00C0BD94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0576216913DD958A00C0BD94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0576216B13DD958A00C0BD94 /* State Cleaner-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "State Cleaner-Prefix.pch"; sourceTree = "<group>"; };
+		0576216B13DD958A00C0BD94 /* Application State Cleaner-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Application State Cleaner-Prefix.pch"; sourceTree = "<group>"; };
 		0576217B13DD96BE00C0BD94 /* ApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationDelegate.m; sourceTree = "<group>"; };
 		0576217D13DD96BE00C0BD94 /* ApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationDelegate.h; sourceTree = "<group>"; };
 		0576218013DD96BE00C0BD94 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -37,6 +39,10 @@
 		0576219613DDB31300C0BD94 /* Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Application.m; sourceTree = "<group>"; };
 		0576219813DDB31D00C0BD94 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
 		0576219A13DDBE8400C0BD94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = UI/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0576219C13DDC70800C0BD94 /* BlueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueView.m; sourceTree = "<group>"; };
+		0576219E13DDC71200C0BD94 /* BlueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueView.h; sourceTree = "<group>"; };
+		057621A313DDC94000C0BD94 /* GrayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayView.h; sourceTree = "<group>"; };
+		057621A513DDC94900C0BD94 /* GrayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +60,7 @@
 		0576214E13DD958900C0BD94 = {
 			isa = PBXGroup;
 			children = (
-				0576216313DD958A00C0BD94 /* State Cleaner */,
+				0576216313DD958A00C0BD94 /* Application State Cleaner */,
 				0576215C13DD958A00C0BD94 /* Frameworks */,
 				0576215A13DD958A00C0BD94 /* Products */,
 			);
@@ -63,7 +69,7 @@
 		0576215A13DD958A00C0BD94 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0576215913DD958A00C0BD94 /* State Cleaner.app */,
+				0576215913DD958A00C0BD94 /* Application State Cleaner.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,23 +93,23 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		0576216313DD958A00C0BD94 /* State Cleaner */ = {
+		0576216313DD958A00C0BD94 /* Application State Cleaner */ = {
 			isa = PBXGroup;
 			children = (
 				0576217A13DD96BE00C0BD94 /* Classes */,
 				0576217E13DD96BE00C0BD94 /* UI */,
 				0576216413DD958A00C0BD94 /* Supporting Files */,
 			);
-			path = "State Cleaner";
+			path = "Application State Cleaner";
 			sourceTree = "<group>";
 		};
 		0576216413DD958A00C0BD94 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0576216513DD958A00C0BD94 /* State Cleaner-Info.plist */,
+				0576216513DD958A00C0BD94 /* Application State Cleaner-Info.plist */,
 				0576216613DD958A00C0BD94 /* InfoPlist.strings */,
 				0576216913DD958A00C0BD94 /* main.m */,
-				0576216B13DD958A00C0BD94 /* State Cleaner-Prefix.pch */,
+				0576216B13DD958A00C0BD94 /* Application State Cleaner-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -113,6 +119,8 @@
 			children = (
 				0576219613DDB31300C0BD94 /* Application.m */,
 				0576217B13DD96BE00C0BD94 /* ApplicationDelegate.m */,
+				0576219C13DDC70800C0BD94 /* BlueView.m */,
+				057621A513DDC94900C0BD94 /* GrayView.m */,
 				0576218B13DD989300C0BD94 /* MainWindowController.m */,
 				0576217C13DD96BE00C0BD94 /* include */,
 			);
@@ -124,6 +132,8 @@
 			children = (
 				0576219813DDB31D00C0BD94 /* Application.h */,
 				0576217D13DD96BE00C0BD94 /* ApplicationDelegate.h */,
+				0576219E13DDC71200C0BD94 /* BlueView.h */,
+				057621A313DDC94000C0BD94 /* GrayView.h */,
 				0576218F13DD98B900C0BD94 /* MainWindowController.h */,
 			);
 			path = include;
@@ -142,9 +152,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0576215813DD958A00C0BD94 /* State Cleaner */ = {
+		0576215813DD958A00C0BD94 /* Application State Cleaner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0576217713DD958A00C0BD94 /* Build configuration list for PBXNativeTarget "State Cleaner" */;
+			buildConfigurationList = 0576217713DD958A00C0BD94 /* Build configuration list for PBXNativeTarget "Application State Cleaner" */;
 			buildPhases = (
 				0576215513DD958A00C0BD94 /* Sources */,
 				0576215613DD958A00C0BD94 /* Frameworks */,
@@ -154,9 +164,9 @@
 			);
 			dependencies = (
 			);
-			name = "State Cleaner";
+			name = "Application State Cleaner";
 			productName = "State Cleaner";
-			productReference = 0576215913DD958A00C0BD94 /* State Cleaner.app */;
+			productReference = 0576215913DD958A00C0BD94 /* Application State Cleaner.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -167,7 +177,7 @@
 			attributes = {
 				ORGANIZATIONNAME = DigiDNA;
 			};
-			buildConfigurationList = 0576215313DD958900C0BD94 /* Build configuration list for PBXProject "State Cleaner" */;
+			buildConfigurationList = 0576215313DD958900C0BD94 /* Build configuration list for PBXProject "Application State Cleaner" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -179,7 +189,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0576215813DD958A00C0BD94 /* State Cleaner */,
+				0576215813DD958A00C0BD94 /* Application State Cleaner */,
 			);
 		};
 /* End PBXProject section */
@@ -207,6 +217,8 @@
 				0576218113DD96BE00C0BD94 /* ApplicationDelegate.m in Sources */,
 				0576218D13DD989300C0BD94 /* MainWindowController.m in Sources */,
 				0576219713DDB31300C0BD94 /* Application.m in Sources */,
+				0576219D13DDC70800C0BD94 /* BlueView.m in Sources */,
+				057621A613DDC94900C0BD94 /* GrayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,9 +393,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "State Cleaner/State Cleaner-Prefix.pch";
-				INFOPLIST_FILE = "State Cleaner/State Cleaner-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Application State Cleaner/Application State Cleaner-Prefix.pch";
+				INFOPLIST_FILE = "Application State Cleaner/Application State Cleaner-Info.plist";
+				PRODUCT_NAME = "Application State Cleaner";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -392,9 +404,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "State Cleaner/State Cleaner-Prefix.pch";
-				INFOPLIST_FILE = "State Cleaner/State Cleaner-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Application State Cleaner/Application State Cleaner-Prefix.pch";
+				INFOPLIST_FILE = "Application State Cleaner/Application State Cleaner-Info.plist";
+				PRODUCT_NAME = "Application State Cleaner";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -402,7 +414,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0576215313DD958900C0BD94 /* Build configuration list for PBXProject "State Cleaner" */ = {
+		0576215313DD958900C0BD94 /* Build configuration list for PBXProject "Application State Cleaner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0576217513DD958A00C0BD94 /* Debug */,
@@ -411,13 +423,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0576217713DD958A00C0BD94 /* Build configuration list for PBXNativeTarget "State Cleaner" */ = {
+		0576217713DD958A00C0BD94 /* Build configuration list for PBXNativeTarget "Application State Cleaner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0576217813DD958A00C0BD94 /* Debug */,
 				0576217913DD958A00C0BD94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

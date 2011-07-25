@@ -14,9 +14,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0576215813DD958A00C0BD94"
-               BuildableName = "State Cleaner.app"
-               BlueprintName = "State Cleaner"
-               ReferencedContainer = "container:State Cleaner.xcodeproj">
+               BuildableName = "Application State Cleaner.app"
+               BlueprintName = "Application State Cleaner"
+               ReferencedContainer = "container:Application State Cleaner.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -39,9 +39,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0576215813DD958A00C0BD94"
-            BuildableName = "State Cleaner.app"
-            BlueprintName = "State Cleaner"
-            ReferencedContainer = "container:State Cleaner.xcodeproj">
+            BuildableName = "Application State Cleaner.app"
+            BlueprintName = "Application State Cleaner"
+            ReferencedContainer = "container:Application State Cleaner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0576215813DD958A00C0BD94"
-            BuildableName = "State Cleaner.app"
-            BlueprintName = "State Cleaner"
-            ReferencedContainer = "container:State Cleaner.xcodeproj">
+            BuildableName = "Application State Cleaner.app"
+            BlueprintName = "Application State Cleaner"
+            ReferencedContainer = "container:Application State Cleaner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

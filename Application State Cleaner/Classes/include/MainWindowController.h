@@ -11,6 +11,7 @@
     
     BOOL                  selectAll;
     NSFileManager       * fm;
+    NSView              * view;
     NSTableView         * table;
     NSMutableDictionary * states;
     NSMutableArray      * apps;
@@ -23,6 +24,7 @@
 }
 
 @property( nonatomic, assign ) IBOutlet NSTableView * table;
+@property( nonatomic, assign ) IBOutlet NSView      * view;
 
 - ( IBAction )selectAll: ( id )sender;
 - ( IBAction )removeSelected: ( id )sender;

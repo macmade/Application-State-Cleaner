@@ -11,6 +11,7 @@
 @implementation MainWindowController
 
 @synthesize table;
+@synthesize view;
 
 #pragma mark - NSWindowController
 
@@ -149,8 +150,6 @@
     app = [ apps objectAtIndex: row ];
     
     [ states setObject: value forKey: app.bundleID ];
-    
-    NSLog( @"%@", value );
 }
 
 #pragma mark - NSTableViewDelegate
