@@ -34,7 +34,7 @@
         fm       = [ NSFileManager defaultManager ];
         wk       = [ NSWorkspace sharedWorkspace ];
         bundleID = [ bundle copy ];
-        path     = [ wk absolutePathForAppBundleWithIdentifier: bundleID ];
+        path     = [ [ wk absolutePathForAppBundleWithIdentifier: bundleID ] retain ];
         
         if( path == nil )
         {
@@ -44,7 +44,7 @@
         }
         
         name                = [ [ fm displayNameAtPath: path ] retain ];
-        savedStateDirectory = [ NSString stringWithFormat: @"%@/Library/Saved Application State/%@.savedState", NSHomeDirectory(), bundleID ];
+        savedStateDirectory = [ [ NSString stringWithFormat: @"%@/Library/Saved Application State/%@.savedState", NSHomeDirectory(), bundleID ] retain ];
         icon                = [ [ wk iconForFile: path ] retain ];
     }
     
