@@ -36,6 +36,19 @@
             {
                 [ apps addObject: app ];
             }
+            
+            [ apps sortUsingComparator:
+                ( NSComparator )^( id obj1, id obj2 )
+                {
+                    Application * app1;
+                    Application * app2;
+                    
+                    app1 = ( Application * )obj1;
+                    app2 = ( Application * )obj2;
+                    
+                    return [ app1.name caseInsensitiveCompare: app2.name ];
+                }
+            ];
         }
     }
     
