@@ -12,8 +12,6 @@
 		</object>
 		<object class="NSArray" key="IBDocument.IntegratedClassDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<string>NSWindowTemplate</string>
-			<string>NSView</string>
 			<string>NSMenu</string>
 			<string>NSMenuItem</string>
 			<string>NSCustomObject</string>
@@ -1317,24 +1315,6 @@
 				</object>
 				<string key="NSName">_NSMainMenu</string>
 			</object>
-			<object class="NSWindowTemplate" id="972006081">
-				<int key="NSWindowStyleMask">15</int>
-				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{335, 390}, {480, 360}}</string>
-				<int key="NSWTFlags">1954021376</int>
-				<string key="NSWindowTitle">State Cleaner</string>
-				<string key="NSWindowClass">NSWindow</string>
-				<nil key="NSViewClass"/>
-				<nil key="NSUserInterfaceItemIdentifier"/>
-				<object class="NSView" key="NSWindowView" id="439893737">
-					<nil key="NSNextResponder"/>
-					<int key="NSvFlags">256</int>
-					<string key="NSFrameSize">{480, 360}</string>
-				</object>
-				<string key="NSScreenRect">{{0, 0}, {1920, 1178}}</string>
-				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
-				<bool key="NSWindowIsRestorable">YES</bool>
-			</object>
 			<object class="NSCustomObject" id="976324537">
 				<string key="NSClassName">ApplicationDelegate</string>
 			</object>
@@ -2010,14 +1990,6 @@
 					<int key="connectionID">530</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">window</string>
-						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="972006081"/>
-					</object>
-					<int key="connectionID">532</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
 						<string key="label">performFindPanelAction:</string>
 						<reference key="source" ref="1014"/>
@@ -2560,20 +2532,6 @@
 						<int key="objectID">354</int>
 						<reference key="object" ref="708854459"/>
 						<reference key="parent" ref="698887838"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">371</int>
-						<reference key="object" ref="972006081"/>
-						<object class="NSMutableArray" key="children">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="439893737"/>
-						</object>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">372</int>
-						<reference key="object" ref="439893737"/>
-						<reference key="parent" ref="972006081"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">375</int>
@@ -3132,10 +3090,6 @@
 					<string>350.IBPluginDependency</string>
 					<string>351.IBPluginDependency</string>
 					<string>354.IBPluginDependency</string>
-					<string>371.IBPluginDependency</string>
-					<string>371.IBWindowTemplateEditedContentRect</string>
-					<string>371.NSWindowTemplate.visibleAtLaunch</string>
-					<string>372.IBPluginDependency</string>
 					<string>375.IBPluginDependency</string>
 					<string>376.IBPluginDependency</string>
 					<string>377.IBPluginDependency</string>
@@ -3288,10 +3242,6 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{380, 496}, {480, 360}}</string>
-					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
