@@ -10,8 +10,7 @@
 		0576215E13DD958A00C0BD94 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0576215D13DD958A00C0BD94 /* Cocoa.framework */; };
 		0576216813DD958A00C0BD94 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0576216613DD958A00C0BD94 /* InfoPlist.strings */; };
 		0576216A13DD958A00C0BD94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0576216913DD958A00C0BD94 /* main.m */; };
-		0576216E13DD958A00C0BD94 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0576216C13DD958A00C0BD94 /* Credits.rtf */; };
-		0576217113DD958A00C0BD94 /* State_CleanerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0576217013DD958A00C0BD94 /* State_CleanerAppDelegate.m */; };
+		0576217113DD958A00C0BD94 /* ApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0576217013DD958A00C0BD94 /* ApplicationDelegate.m */; };
 		0576217413DD958A00C0BD94 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0576217213DD958A00C0BD94 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
@@ -21,13 +20,12 @@
 		0576216013DD958A00C0BD94 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		0576216113DD958A00C0BD94 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0576216213DD958A00C0BD94 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		0576216513DD958A00C0BD94 /* State Cleaner-Info.plist */ = {isa = PBXFileReference; path = "State Cleaner-Info.plist"; sourceTree = "<group>"; };
+		0576216513DD958A00C0BD94 /* State Cleaner-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "State Cleaner-Info.plist"; sourceTree = "<group>"; };
 		0576216713DD958A00C0BD94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0576216913DD958A00C0BD94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0576216B13DD958A00C0BD94 /* State Cleaner-Prefix.pch */ = {isa = PBXFileReference; path = "State Cleaner-Prefix.pch"; sourceTree = "<group>"; };
-		0576216D13DD958A00C0BD94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		0576216F13DD958A00C0BD94 /* State_CleanerAppDelegate.h */ = {isa = PBXFileReference; path = State_CleanerAppDelegate.h; sourceTree = "<group>"; };
-		0576217013DD958A00C0BD94 /* State_CleanerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = State_CleanerAppDelegate.m; sourceTree = "<group>"; };
+		0576216B13DD958A00C0BD94 /* State Cleaner-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "State Cleaner-Prefix.pch"; sourceTree = "<group>"; };
+		0576216F13DD958A00C0BD94 /* ApplicationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationDelegate.h; sourceTree = "<group>"; };
+		0576217013DD958A00C0BD94 /* ApplicationDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationDelegate.m; sourceTree = "<group>"; };
 		0576217313DD958A00C0BD94 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,8 +80,8 @@
 		0576216313DD958A00C0BD94 /* State Cleaner */ = {
 			isa = PBXGroup;
 			children = (
-				0576216F13DD958A00C0BD94 /* State_CleanerAppDelegate.h */,
-				0576217013DD958A00C0BD94 /* State_CleanerAppDelegate.m */,
+				0576216F13DD958A00C0BD94 /* ApplicationDelegate.h */,
+				0576217013DD958A00C0BD94 /* ApplicationDelegate.m */,
 				0576217213DD958A00C0BD94 /* MainMenu.xib */,
 				0576216413DD958A00C0BD94 /* Supporting Files */,
 			);
@@ -97,7 +95,6 @@
 				0576216613DD958A00C0BD94 /* InfoPlist.strings */,
 				0576216913DD958A00C0BD94 /* main.m */,
 				0576216B13DD958A00C0BD94 /* State Cleaner-Prefix.pch */,
-				0576216C13DD958A00C0BD94 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -153,7 +150,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0576216813DD958A00C0BD94 /* InfoPlist.strings in Resources */,
-				0576216E13DD958A00C0BD94 /* Credits.rtf in Resources */,
 				0576217413DD958A00C0BD94 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,7 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0576216A13DD958A00C0BD94 /* main.m in Sources */,
-				0576217113DD958A00C0BD94 /* State_CleanerAppDelegate.m in Sources */,
+				0576217113DD958A00C0BD94 /* ApplicationDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,14 +175,6 @@
 				0576216713DD958A00C0BD94 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		0576216C13DD958A00C0BD94 /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0576216D13DD958A00C0BD94 /* en */,
-			);
-			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
 		0576217213DD958A00C0BD94 /* MainMenu.xib */ = {

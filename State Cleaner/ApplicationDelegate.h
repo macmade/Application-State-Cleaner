@@ -5,7 +5,18 @@
 
 /* $Id$ */
 
-int main( int argc, char * argv[] )
+@interface ApplicationDelegate: NSObject < NSApplicationDelegate >
 {
-    return NSApplicationMain( argc, ( const char ** )argv );
+@protected
+    
+    NSWindow * window;
+    
+@private
+    
+    id r1;
+    id r2;
 }
+
+@property( assign ) IBOutlet NSWindow * window;
+
+@end

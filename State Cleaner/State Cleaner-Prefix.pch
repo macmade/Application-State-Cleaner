@@ -1,6 +1,9 @@
-//
-// Prefix header for all source files of the 'State Cleaner' target in the 'State Cleaner' project
-//
+/*******************************************************************************
+ * Copyright (c) 2011, eosgarden
+ * All rights reserved
+ ******************************************************************************/
+
+/* $Id$ */
 
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>

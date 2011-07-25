@@ -5,7 +5,15 @@
 
 /* $Id$ */
 
-int main( int argc, char * argv[] )
+#import "ApplicationDelegate.h"
+
+@implementation ApplicationDelegate
+
+@synthesize window;
+
+- ( void )applicationDidFinishLaunching: ( NSNotification * )notification
 {
-    return NSApplicationMain( argc, ( const char ** )argv );
+    ( void )notification;
 }
+
+@end
