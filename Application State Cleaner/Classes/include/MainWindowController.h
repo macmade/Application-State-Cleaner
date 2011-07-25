@@ -16,6 +16,8 @@
     NSMutableDictionary * states;
     NSMutableArray      * apps;
     NSString            * path;
+    NSButton            * removeButton;
+    NSProgressIndicator * progress;
     
 @private
     
@@ -23,8 +25,10 @@
     id r2;
 }
 
-@property( nonatomic, assign ) IBOutlet NSTableView * table;
-@property( nonatomic, assign ) IBOutlet NSView      * view;
+@property( nonatomic, assign ) IBOutlet NSTableView         * table;
+@property( nonatomic, assign ) IBOutlet NSView              * view;
+@property( nonatomic, assign ) IBOutlet NSButton            * removeButton;
+@property( nonatomic, assign ) IBOutlet NSProgressIndicator * progress;
 
 - ( IBAction )selectAll: ( id )sender;
 - ( IBAction )removeSelected: ( id )sender;

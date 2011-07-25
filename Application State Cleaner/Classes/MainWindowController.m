@@ -8,49 +8,100 @@
 #import "MainWindowController.h"
 #import "Application.h"
 
+@interface MainWindowController( Private )
+
+- ( void )getApplications;
+- ( void )removeAppStates: ( id )sender;
+
+@end
+
+@implementation MainWindowController( Private )
+
+- ( void )getApplications
+{
+    Application * app;
+    NSArray     * dirs;
+    NSString    * dir;
+    NSString    * bundleID;
+    
+    [ apps release ];
+    
+    apps = [ [ NSMutableArray alloc ] initWithCapacity: 100 ];
+    dirs = [ [ fm contentsOfDirectoryAtPath: path error: NULL ] retain ];
+    
+    for( dir in dirs )
+    {
+        bundleID = [ dir stringByReplacingOccurrencesOfString: @".savedState" withString: @"" ];
+        
+        if( [ bundleID isEqualToString: @"com.eosgarden.Application-State-Cleaner" ] )
+        {
+            continue;
+        }
+        
+        app = [ Application applicationWithBundleID: bundleID ];
+        
+        if( app != nil )
+        {
+            [ apps addObject: app ];
+        }
+    }
+    
+    [ apps sortUsingComparator:
+        ( NSComparator )^( id obj1, id obj2 )
+        {
+            Application * app1;
+            Application * app2;
+            
+            app1 = ( Application * )obj1;
+            app2 = ( Application * )obj2;
+            
+            return [ app1.name caseInsensitiveCompare: app2.name ];
+        }
+     ];
+}
+
+- ( void )removeAppStates: ( id )sender
+{
+    NSString * bundleID;
+    NSString * dir;
+    
+    for( bundleID in states )
+    {
+        if( [ [ states objectForKey: bundleID ] boolValue ] )
+        {
+            dir = [ NSString stringWithFormat: @"%@/Library/Saved Application State/%@.savedState", NSHomeDirectory(), bundleID ];
+            
+            [ fm removeItemAtPath: dir error: NULL ];
+        }
+    }
+    
+    [ self getApplications ];
+    [ table reloadData ];
+    [ progress setHidden: YES ];
+    [ progress stopAnimation: nil ];
+    [ sender setHidden: NO ];
+}
+
+@end
+
 @implementation MainWindowController
 
 @synthesize table;
 @synthesize view;
+@synthesize removeButton;
+@synthesize progress;
 
 #pragma mark - NSWindowController
 
 - ( id )init
 {
-    Application * app;
-    NSArray     * dirs;
-    NSString    * dir;
-    
     if( ( self = [ super initWithWindowNibName: @"MainWindow" ] ) )
     {
         fm     = [ NSFileManager defaultManager ];
         states = [ [ NSMutableDictionary alloc ] initWithCapacity: 100 ];
-        apps   = [ [ NSMutableArray alloc ] initWithCapacity: 100 ];
-        path   = [ NSString stringWithFormat: @"%@/Library/Saved Application State/", NSHomeDirectory() ];
-        dirs   = [ [ fm contentsOfDirectoryAtPath: path error: NULL ] retain ];
+        path   = [ [ NSString stringWithFormat: @"%@/Library/Saved Application State/", NSHomeDirectory() ] retain ];
         
-        for( dir in dirs )
-        {
-            app = [ Application applicationWithBundleID: [ dir stringByReplacingOccurrencesOfString: @".savedState" withString: @"" ] ];
-            
-            if( app != nil )
-            {
-                [ apps addObject: app ];
-            }
-            
-            [ apps sortUsingComparator:
-                ( NSComparator )^( id obj1, id obj2 )
-                {
-                    Application * app1;
-                    Application * app2;
-                    
-                    app1 = ( Application * )obj1;
-                    app2 = ( Application * )obj2;
-                    
-                    return [ app1.name caseInsensitiveCompare: app2.name ];
-                }
-            ];
-        }
+        [ self getApplications ];
     }
     
     return self;
@@ -66,6 +117,8 @@
 
 - ( void )awakeFromNib
 {
+    [ progress setHidden: YES ];
+    
     table.dataSource = self;
     table.delegate   = self;
 }
@@ -105,7 +158,10 @@
 
 - ( IBAction )removeSelected: ( id )sender
 {
-    ( void )sender;
+    [ removeButton setHidden: YES ];
+    [ progress setHidden: NO ];
+    [ progress startAnimation: sender ];
+    [ NSThread detachNewThreadSelector: @selector( removeAppStates: ) toTarget: self withObject: sender ];
 }
 
 #pragma mark - NSTableViewDataSource
