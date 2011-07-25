@@ -5,15 +5,11 @@
 
 /* $Id$ */
 
-@class MainWindowController;
-@class AboutWindowController;
-
-@interface ApplicationDelegate: NSObject < NSApplicationDelegate >
+@interface AboutWindowController: NSWindowController
 {
 @protected
     
-    MainWindowController  * mainWindow;
-    AboutWindowController * aboutWindow;
+    NSTextField * version;
     
 @private
     
@@ -21,6 +17,8 @@
     id r2;
 }
 
-- ( IBAction )showAboutWindow: ( id )sender;
+@property( nonatomic, assign ) IBOutlet NSTextField * version;
+
+- ( IBAction )close: ( id )sender;
 
 @end

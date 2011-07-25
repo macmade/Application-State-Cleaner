@@ -7,6 +7,7 @@
 
 #import "ApplicationDelegate.h"
 #import "MainWindowController.h"
+#import "AboutWindowController.h"
 
 @implementation ApplicationDelegate
 
@@ -18,6 +19,19 @@
     
     [ mainWindow.window center ];
     [ mainWindow showWindow: nil ];
+}
+
+- ( IBAction )showAboutWindow: ( id )sender
+{
+    ( void )sender;
+    
+    if( aboutWindow == nil )
+    {
+        aboutWindow = [ AboutWindowController new ];
+    }
+    
+    [ aboutWindow.window center ];
+    [ aboutWindow showWindow: nil ];
 }
 
 @end

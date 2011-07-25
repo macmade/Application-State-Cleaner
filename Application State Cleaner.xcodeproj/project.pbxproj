@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		053BEFF213DE1C340044B7EB /* Application.icns in Resources */ = {isa = PBXBuildFile; fileRef = 053BEFF113DE1C340044B7EB /* Application.icns */; };
+		053BEFF513DE1D240044B7EB /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 053BEFF313DE1D240044B7EB /* AboutWindow.xib */; };
+		053BEFF713DE1F060044B7EB /* AboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 053BEFF613DE1F060044B7EB /* AboutWindowController.m */; };
 		0576215E13DD958A00C0BD94 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0576215D13DD958A00C0BD94 /* Cocoa.framework */; };
 		0576216813DD958A00C0BD94 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0576216613DD958A00C0BD94 /* InfoPlist.strings */; };
 		0576216A13DD958A00C0BD94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0576216913DD958A00C0BD94 /* main.m */; };
@@ -23,6 +25,9 @@
 
 /* Begin PBXFileReference section */
 		053BEFF113DE1C340044B7EB /* Application.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Application.icns; path = ../../Application.icns; sourceTree = "<group>"; };
+		053BEFF413DE1D240044B7EB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AboutWindow.xib; sourceTree = "<group>"; };
+		053BEFF613DE1F060044B7EB /* AboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutWindowController.m; sourceTree = "<group>"; };
+		053BEFF813DE1F0F0044B7EB /* AboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutWindowController.h; sourceTree = "<group>"; };
 		0576215913DD958A00C0BD94 /* Application State Cleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Application State Cleaner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0576215D13DD958A00C0BD94 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0576216013DD958A00C0BD94 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -119,6 +124,7 @@
 		0576217A13DD96BE00C0BD94 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				053BEFF613DE1F060044B7EB /* AboutWindowController.m */,
 				0576219613DDB31300C0BD94 /* Application.m */,
 				0576217B13DD96BE00C0BD94 /* ApplicationDelegate.m */,
 				0576219C13DDC70800C0BD94 /* BlueView.m */,
@@ -132,6 +138,7 @@
 		0576217C13DD96BE00C0BD94 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				053BEFF813DE1F0F0044B7EB /* AboutWindowController.h */,
 				0576219813DDB31D00C0BD94 /* Application.h */,
 				0576217D13DD96BE00C0BD94 /* ApplicationDelegate.h */,
 				0576219E13DDC71200C0BD94 /* BlueView.h */,
@@ -145,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				053BEFF113DE1C340044B7EB /* Application.icns */,
+				053BEFF313DE1D240044B7EB /* AboutWindow.xib */,
 				0576217F13DD96BE00C0BD94 /* MainMenu.xib */,
 				0576218713DD987200C0BD94 /* MainWindow.xib */,
 				0576219913DDBE8400C0BD94 /* Localizable.strings */,
@@ -207,6 +215,7 @@
 				0576218913DD987200C0BD94 /* MainWindow.xib in Resources */,
 				0576219B13DDBE8400C0BD94 /* Localizable.strings in Resources */,
 				053BEFF213DE1C340044B7EB /* Application.icns in Resources */,
+				053BEFF513DE1D240044B7EB /* AboutWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,12 +232,21 @@
 				0576219713DDB31300C0BD94 /* Application.m in Sources */,
 				0576219D13DDC70800C0BD94 /* BlueView.m in Sources */,
 				057621A613DDC94900C0BD94 /* GrayView.m in Sources */,
+				053BEFF713DE1F060044B7EB /* AboutWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		053BEFF313DE1D240044B7EB /* AboutWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				053BEFF413DE1D240044B7EB /* en */,
+			);
+			name = AboutWindow.xib;
+			sourceTree = "<group>";
+		};
 		0576216613DD958A00C0BD94 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
