@@ -5,18 +5,18 @@
 
 /* $Id$ */
 
+@class MainWindowController;
+
 @interface ApplicationDelegate: NSObject < NSApplicationDelegate >
 {
 @protected
     
-    NSWindow * window;
+    MainWindowController * mainWindow;
     
 @private
     
     id r1;
     id r2;
 }
-
-@property( assign ) IBOutlet NSWindow * window;
 
 @end

@@ -6,14 +6,18 @@
 /* $Id$ */
 
 #import "ApplicationDelegate.h"
+#import "MainWindowController.h"
 
 @implementation ApplicationDelegate
-
-@synthesize window;
 
 - ( void )applicationDidFinishLaunching: ( NSNotification * )notification
 {
     ( void )notification;
+    
+    mainWindow = [ MainWindowController new ];
+    
+    [ mainWindow.window center ];
+    [ mainWindow showWindow: nil ];
 }
 
 @end
