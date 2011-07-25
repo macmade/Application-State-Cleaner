@@ -10,8 +10,8 @@
 		0576215E13DD958A00C0BD94 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0576215D13DD958A00C0BD94 /* Cocoa.framework */; };
 		0576216813DD958A00C0BD94 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0576216613DD958A00C0BD94 /* InfoPlist.strings */; };
 		0576216A13DD958A00C0BD94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0576216913DD958A00C0BD94 /* main.m */; };
-		0576217113DD958A00C0BD94 /* ApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0576217013DD958A00C0BD94 /* ApplicationDelegate.m */; };
-		0576217413DD958A00C0BD94 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0576217213DD958A00C0BD94 /* MainMenu.xib */; };
+		0576218113DD96BE00C0BD94 /* ApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0576217B13DD96BE00C0BD94 /* ApplicationDelegate.m */; };
+		0576218213DD96BE00C0BD94 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0576217F13DD96BE00C0BD94 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +24,9 @@
 		0576216713DD958A00C0BD94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0576216913DD958A00C0BD94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0576216B13DD958A00C0BD94 /* State Cleaner-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "State Cleaner-Prefix.pch"; sourceTree = "<group>"; };
-		0576216F13DD958A00C0BD94 /* ApplicationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationDelegate.h; sourceTree = "<group>"; };
-		0576217013DD958A00C0BD94 /* ApplicationDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationDelegate.m; sourceTree = "<group>"; };
-		0576217313DD958A00C0BD94 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0576217B13DD96BE00C0BD94 /* ApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationDelegate.m; sourceTree = "<group>"; };
+		0576217D13DD96BE00C0BD94 /* ApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationDelegate.h; sourceTree = "<group>"; };
+		0576218013DD96BE00C0BD94 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +80,8 @@
 		0576216313DD958A00C0BD94 /* State Cleaner */ = {
 			isa = PBXGroup;
 			children = (
-				0576216F13DD958A00C0BD94 /* ApplicationDelegate.h */,
-				0576217013DD958A00C0BD94 /* ApplicationDelegate.m */,
-				0576217213DD958A00C0BD94 /* MainMenu.xib */,
+				0576217A13DD96BE00C0BD94 /* Classes */,
+				0576217E13DD96BE00C0BD94 /* UI */,
 				0576216413DD958A00C0BD94 /* Supporting Files */,
 			);
 			path = "State Cleaner";
@@ -97,6 +96,31 @@
 				0576216B13DD958A00C0BD94 /* State Cleaner-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0576217A13DD96BE00C0BD94 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0576217B13DD96BE00C0BD94 /* ApplicationDelegate.m */,
+				0576217C13DD96BE00C0BD94 /* include */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0576217C13DD96BE00C0BD94 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				0576217D13DD96BE00C0BD94 /* ApplicationDelegate.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		0576217E13DD96BE00C0BD94 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0576217F13DD96BE00C0BD94 /* MainMenu.xib */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0576216813DD958A00C0BD94 /* InfoPlist.strings in Resources */,
-				0576217413DD958A00C0BD94 /* MainMenu.xib in Resources */,
+				0576218213DD96BE00C0BD94 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0576216A13DD958A00C0BD94 /* main.m in Sources */,
-				0576217113DD958A00C0BD94 /* ApplicationDelegate.m in Sources */,
+				0576218113DD96BE00C0BD94 /* ApplicationDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,10 +201,10 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		0576217213DD958A00C0BD94 /* MainMenu.xib */ = {
+		0576217F13DD96BE00C0BD94 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0576217313DD958A00C0BD94 /* en */,
+				0576218013DD96BE00C0BD94 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
