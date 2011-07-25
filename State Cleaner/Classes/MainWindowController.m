@@ -69,6 +69,20 @@
     table.delegate   = self;
 }
 
+#pragma mark - IBActions
+
+- ( IBAction )selectAll: ( id )sender
+{
+    NSButton * btn;
+    
+    btn = ( NSButton * )sender;
+}
+
+- ( IBAction )removeSelected: ( id )sender
+{
+    ( void )sender;
+}
+
 #pragma mark - NSTableViewDataSource
 
 - ( NSInteger )numberOfRowsInTableView: ( NSTableView * )tableView

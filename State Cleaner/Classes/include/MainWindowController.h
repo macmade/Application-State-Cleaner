@@ -23,4 +23,7 @@
 
 @property( nonatomic, assign ) IBOutlet NSTableView * table;
 
+- ( IBAction )selectAll: ( id )sender;
+- ( IBAction )removeSelected: ( id )sender;
+
 @end
