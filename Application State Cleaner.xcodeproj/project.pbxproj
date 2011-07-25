@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		053BEFF213DE1C340044B7EB /* Application.icns in Resources */ = {isa = PBXBuildFile; fileRef = 053BEFF113DE1C340044B7EB /* Application.icns */; };
 		0576215E13DD958A00C0BD94 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0576215D13DD958A00C0BD94 /* Cocoa.framework */; };
 		0576216813DD958A00C0BD94 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0576216613DD958A00C0BD94 /* InfoPlist.strings */; };
 		0576216A13DD958A00C0BD94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0576216913DD958A00C0BD94 /* main.m */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		053BEFF113DE1C340044B7EB /* Application.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Application.icns; path = ../../Application.icns; sourceTree = "<group>"; };
 		0576215913DD958A00C0BD94 /* Application State Cleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Application State Cleaner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0576215D13DD958A00C0BD94 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0576216013DD958A00C0BD94 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -142,6 +144,7 @@
 		0576217E13DD96BE00C0BD94 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				053BEFF113DE1C340044B7EB /* Application.icns */,
 				0576217F13DD96BE00C0BD94 /* MainMenu.xib */,
 				0576218713DD987200C0BD94 /* MainWindow.xib */,
 				0576219913DDBE8400C0BD94 /* Localizable.strings */,
@@ -203,6 +206,7 @@
 				0576218213DD96BE00C0BD94 /* MainMenu.xib in Resources */,
 				0576218913DD987200C0BD94 /* MainWindow.xib in Resources */,
 				0576219B13DDBE8400C0BD94 /* Localizable.strings in Resources */,
+				053BEFF213DE1C340044B7EB /* Application.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
