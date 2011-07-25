@@ -15,6 +15,7 @@
 		0576218913DD987200C0BD94 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0576218713DD987200C0BD94 /* MainWindow.xib */; };
 		0576218D13DD989300C0BD94 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0576218B13DD989300C0BD94 /* MainWindowController.m */; };
 		0576219713DDB31300C0BD94 /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = 0576219613DDB31300C0BD94 /* Application.m */; };
+		0576219B13DDBE8400C0BD94 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0576219913DDBE8400C0BD94 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		0576218F13DD98B900C0BD94 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
 		0576219613DDB31300C0BD94 /* Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Application.m; sourceTree = "<group>"; };
 		0576219813DDB31D00C0BD94 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
+		0576219A13DDBE8400C0BD94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = UI/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			children = (
 				0576217F13DD96BE00C0BD94 /* MainMenu.xib */,
 				0576218713DD987200C0BD94 /* MainWindow.xib */,
+				0576219913DDBE8400C0BD94 /* Localizable.strings */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				0576216813DD958A00C0BD94 /* InfoPlist.strings in Resources */,
 				0576218213DD96BE00C0BD94 /* MainMenu.xib in Resources */,
 				0576218913DD987200C0BD94 /* MainWindow.xib in Resources */,
+				0576219B13DDBE8400C0BD94 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +235,15 @@
 				0576218813DD987200C0BD94 /* en */,
 			);
 			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		0576219913DDBE8400C0BD94 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0576219A13DDBE8400C0BD94 /* en */,
+			);
+			name = Localizable.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
