@@ -61,15 +61,15 @@
 							<string key="NSTitle">Application State Cleaner</string>
 							<object class="NSMutableArray" key="NSMenuItems">
 								<bool key="EncodedWithXMLCoder">YES</bool>
-								<object class="NSMenuItem" id="912561896">
+								<object class="NSMenuItem" id="548948641">
 									<reference key="NSMenu" ref="110575045"/>
-									<string key="NSTitle">About Application State Cleaner</string>
+									<string key="NSTitle">About Application State Cleaner...</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="35465992"/>
 									<reference key="NSMixedImage" ref="502551668"/>
 								</object>
-								<object class="NSMenuItem" id="901925797">
+								<object class="NSMenuItem" id="323725602">
 									<reference key="NSMenu" ref="110575045"/>
 									<bool key="NSIsDisabled">YES</bool>
 									<bool key="NSIsSeparator">YES</bool>
@@ -302,7 +302,7 @@
 					<object class="IBActionConnection" key="connection">
 						<string key="label">showAboutWindow:</string>
 						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="912561896"/>
+						<reference key="destination" ref="548948641"/>
 					</object>
 					<int key="connectionID">538</int>
 				</object>
@@ -375,8 +375,8 @@
 							<reference ref="1046388886"/>
 							<reference ref="1056857174"/>
 							<reference ref="342932134"/>
-							<reference ref="901925797"/>
-							<reference ref="912561896"/>
+							<reference ref="323725602"/>
+							<reference ref="548948641"/>
 						</object>
 						<reference key="parent" ref="694149608"/>
 					</object>
@@ -476,12 +476,12 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">536</int>
-						<reference key="object" ref="901925797"/>
+						<reference key="object" ref="323725602"/>
 						<reference key="parent" ref="110575045"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">537</int>
-						<reference key="object" ref="912561896"/>
+						<reference key="object" ref="548948641"/>
 						<reference key="parent" ref="110575045"/>
 					</object>
 				</object>
