@@ -14,6 +14,7 @@
 		0576218213DD96BE00C0BD94 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0576217F13DD96BE00C0BD94 /* MainMenu.xib */; };
 		0576218913DD987200C0BD94 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0576218713DD987200C0BD94 /* MainWindow.xib */; };
 		0576218D13DD989300C0BD94 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0576218B13DD989300C0BD94 /* MainWindowController.m */; };
+		0576219713DDB31300C0BD94 /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = 0576219613DDB31300C0BD94 /* Application.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		0576218813DD987200C0BD94 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		0576218B13DD989300C0BD94 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
 		0576218F13DD98B900C0BD94 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		0576219613DDB31300C0BD94 /* Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Application.m; sourceTree = "<group>"; };
+		0576219813DDB31D00C0BD94 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,7 @@
 		0576217A13DD96BE00C0BD94 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0576219613DDB31300C0BD94 /* Application.m */,
 				0576217B13DD96BE00C0BD94 /* ApplicationDelegate.m */,
 				0576218B13DD989300C0BD94 /* MainWindowController.m */,
 				0576217C13DD96BE00C0BD94 /* include */,
@@ -116,6 +120,7 @@
 		0576217C13DD96BE00C0BD94 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				0576219813DDB31D00C0BD94 /* Application.h */,
 				0576217D13DD96BE00C0BD94 /* ApplicationDelegate.h */,
 				0576218F13DD98B900C0BD94 /* MainWindowController.h */,
 			);
@@ -197,6 +202,7 @@
 				0576216A13DD958A00C0BD94 /* main.m in Sources */,
 				0576218113DD96BE00C0BD94 /* ApplicationDelegate.m in Sources */,
 				0576218D13DD989300C0BD94 /* MainWindowController.m in Sources */,
+				0576219713DDB31300C0BD94 /* Application.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
