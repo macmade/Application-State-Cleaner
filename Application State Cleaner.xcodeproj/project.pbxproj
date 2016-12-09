@@ -414,12 +414,10 @@
 		0576217813DD958A00C0BD94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Application State Cleaner/Application State Cleaner-Prefix.pch";
 				INFOPLIST_FILE = "Application State Cleaner/Application State Cleaner-Info.plist";
 				PRODUCT_NAME = "Application State Cleaner";
-				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -427,13 +425,11 @@
 		0576217913DD958A00C0BD94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				DSTROOT = /;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Application State Cleaner/Application State Cleaner-Prefix.pch";
 				INFOPLIST_FILE = "Application State Cleaner/Application State Cleaner-Info.plist";
 				PRODUCT_NAME = "Application State Cleaner";
-				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

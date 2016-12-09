@@ -1,0 +1,4 @@
+language: objective-c
+xcode_project: Application State Cleaner.xcodeproj
+xcode_scheme: State Cleaner - Release
+
